@@ -1,0 +1,64 @@
+<div id="top-container">
+  <div id="welcome-container">
+    <h3>Welcome to</h3>
+    <h1>brumbiki</h1>
+
+    <% if !current_user %>
+      <h4>Networking is tedious. Let Brumbiki make it easy by delivering you useful content based on the articles and videos that your contact cares most deeply about.</h4>
+    <% else %>
+      <h4>Enter a Twitter handle in the search bar to begin expanding your network and exploring meaningful conversations.</h4>
+    <% end %>
+
+    <% if !current_user %>
+      <a href="/auth/twitter">
+        <button id="initial-login-button">Login With Twitter</button>
+      </a>
+    <% end %>
+  </div>
+
+  <div id="one-degree-button-container">
+
+    <% if current_user %>
+        <button id="one-degree-button">Click to find others to include in the conversation!</button>
+    <% else %>
+      <button id="login">Please login to see your Brumbiki!</button>
+    <% end %>
+
+  </div>
+
+  <div id="one-degree-drawing-container">
+    <div id="minimize-button"><a href="">-</a></div>
+
+    <div class="type-containers" id="target-container">
+      <h4 class="type-text-left">This is your main contact:</h4>
+    </div>
+    <div class="type-containers" id="primary-container">
+      <h4 class="type-text-right">People your contact has mentioned in a tweet that currently follow you:</h4>
+    </div>
+    <div class="type-containers" id="secondary-container">
+      <h4 class="type-text-left">People your contact is following that also follow you:</h4>
+    </div>
+    <div class="type-containers" id="tertiary-container">
+      <h4 class="type-text-right">The top 3 poeple your contact mentions most:</h4>
+    </div>
+  </div>
+</div>
+
+<div id="bottom-container">
+  <div id="loading-container">
+    <h4 id="loading-text"></h4>
+    <div class="spinner">
+      <div class="dot1"></div>
+      <div class="dot2"></div>
+    </div>
+  </div>
+
+  <div id="full-width-content-container">
+    <div id="content-container">
+      <div id="tweets-container"></div>
+      <div id="search-results-container">
+        <div id="keyword-container"></div>
+      </div>
+    </div>
+  </div>
+</div>

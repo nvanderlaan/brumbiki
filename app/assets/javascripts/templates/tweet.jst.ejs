@@ -1,0 +1,32 @@
+<% if (links.length > 0) { %>
+  <div class="tweet-container">
+
+    <img class="profile-pic" src="<%= target_profile_image_url %>" alt="">
+
+    <div class="tweet-content-container">
+
+      <h4 class="target-name"><%= target_name %></h4>
+      <h4 class="target-handle">@<%= target_handle %></h4>
+
+      <div class="tweet-content">
+        <p class="tweet-text"><%= text %></p>
+        <% links.forEach(function(link) { %>
+          <a class="tweet-link" href="<%= link.url %>" class="test" target="_blank"><%= link.title %></a>
+        <% }); %>
+        <p class="tweet-date"><%= created_at %></p>
+        <a href="https://twitter.com/share?in_reply_to=<%= tweet_id %>&url=twitter.com" onClick='showPopup(this.href);return(false);'>
+          <button class="reply-button">Reply</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="keyword-cloud">
+    <% for (var i = 0; i < text_keywords.length; i++) { %>
+      <input class="keyword" type="submit" value="<%=text_keywords[i]%>">
+    <% } %>
+
+    <% for (var i = 0; i < title_keywords.length; i++) { %>
+      <input class="keyword" type="submit" value="<%=title_keywords[i]%>">
+    <% } %>
+  </div>
+<% } %>

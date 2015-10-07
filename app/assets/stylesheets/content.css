@@ -1,0 +1,214 @@
+#full-width-content-container {
+  width: 100%;
+  background-color: white;
+}
+
+#content-container {
+  width: 1100px;
+  display: none;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 50px 5px;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#tweets-container {
+  float: left;
+  width: 500px;
+}
+
+.tweet-container {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.profile-pic {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.tweet-content-container {
+  width: 425px;
+  text-align: left;
+  padding-left: 8px;
+  margin: 0 0 0 45px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.target-name, .target-handle {
+  font-size: 16px;
+  margin: 0 15px 5px 0;
+  display: inline-block;
+}
+
+.target-name {
+  font-weight: 600;
+}
+
+.target-handle {
+  color: #9B9B9B;
+  font-weight: 400;
+}
+
+.tweet-content {
+  font-size: 20px;
+  position: relative;
+}
+
+.tweet-text {
+  margin: 0 0 5px 0;
+  font-weight: 400;
+}
+
+.tweet-date {
+  color: #9B9B9B;
+  font-size: 16px;
+  margin: 35px 0 0 0;
+}
+
+.tweet-link, #search-result-link {
+  color: #242464;
+  display: block;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+#search-result-link {
+  font-size: 18px;
+}
+
+.tweet-link:hover, #search-result-link:hover {
+  color: #59597C;
+}
+
+.reply-button, .twitter-share-button {
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 16px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: #242464;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.reply-button {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.reply-button:hover, .twitter-share-button:hover {
+  background-color: #59597C;
+}
+
+.keyword-cloud {
+  margin: 25px 0 19px 0;
+}
+
+.keyword {
+  height: 40px;
+  outline: none;
+  color: #D93240;
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 12px 16px 0;
+  background-color: white;
+  border: 1px solid #D93240;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.active-keyword {
+  height: 40px;
+  color: white;
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 12px 16px 0;
+  background-color: #D93240;
+  border: 1px solid #D93240;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.active-keyword-lite {
+  opacity: 0.9;
+  height: 40px;
+  color: white;
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 12px 16px 0;
+  background-color: #EE5863;
+  border: 1px solid #EE5863;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.keyword-tracker {
+  color: white;
+  height: 40px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 12px 16px 0;
+  background-color: #D93240;
+  border: 1px solid #D93240;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.keyword-tracker:hover {
+  border-color: #EE5863;
+  background-color: #EE5863;
+}
+
+#search-results-container {
+  float: right;
+  width: 550px;
+}
+
+.search-result-container {
+  overflow: hidden;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.twitter-share-button {
+  float: right;
+}

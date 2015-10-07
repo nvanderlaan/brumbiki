@@ -1,0 +1,9 @@
+<div class="search-result-container">
+  <a id="search-result-link" href="<%= url %>" target="_blank"><%= title %></a>
+
+  <p id="search-result-description"><%= description %></p>
+
+  <a href="https://twitter.com/share?url=<%= url %>&text=<%= handle %> I thought you might find this interesting - " data-url="<%= url %>" onClick='showPopup(this.href);return(false);'>
+    <button class="twitter-share-button">Tweet <%= handle %></button>
+  </a>
+</div>
